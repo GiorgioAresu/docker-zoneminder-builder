@@ -2,7 +2,7 @@ FROM phusion/baseimage:0.9.19
 
 MAINTAINER Giorgio Aresu <giorgioaresu@gmail.com>
 
-ENV BRANCH master
+ARG BRANCH=master
 
 WORKDIR /tmp
 
