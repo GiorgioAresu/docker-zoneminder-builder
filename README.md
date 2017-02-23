@@ -9,10 +9,10 @@ It should be fairly simple to adapt it to use other base images for specific dis
     docker run giorgioaresu/zoneminder-builder
     ```
     
-    If you want to build a specific branch you can use the BRANCH environment variable, plus you should probably tag the image:
+    If you want to build a specific branch you can use the BRANCH environment variable, plus you'll probably want to name the image:
     
     ```sh
-    docker run -e BRANCH=feature-h264-storage -t zm-builder giorgioaresu/zoneminder-builder
+    docker run --name zm-builder -e BRANCH=feature-h264-storage giorgioaresu/zoneminder-builder
     ```
         
 2. Once the container finishes, you can get the resulting packages with
